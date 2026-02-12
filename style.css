@@ -80,7 +80,6 @@ section {
 @media (max-width: 600px) {
   body {
     background-position: center bottom;
-    filter: brightness(1) saturate(1.4);
     background-color: rgba(0, 0, 0, 0.3); /* fundo mais transparente */
   }
   .cardapio, .resumo, .header {
@@ -529,6 +528,22 @@ h1 {
   opacity: 1;
   pointer-events: auto;
 }
+
+
+@media (max-width: 500px) {
+  .toast {
+    bottom: calc(20px + env(safe-area-inset-bottom));
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 40px);
+    max-width: 400px;
+    z-index: 9999;
+  }
+}
+
+
+
+
 
 /* MODAL */
 .modal {
